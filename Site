@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvelflix</title>
+    <meta name="description" content="Marvelflix - Sua fonte de filmes e trailers do universo Marvel.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e60000;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .filme {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .filme-item {
+            background-color: white;
+            width: calc(33.33% - 20px); /* Ajusta a largura dos itens */
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            text-decoration: none;
+            color: black;
+            transition: transform 0.3s; /* Animação de transformação */
+        }
+
+        .filme-item:hover {
+            transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+        }
+
+        .filme-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .filme-item h2 {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 18px;
+            background-color: #e6e6e6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff0000;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .filme-item {
+                width: calc(50% - 20px); /* Ajusta para 2 itens por linha em telas menores */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .filme-item {
+                width: 100%; /* Um item por linha em telas muito pequenas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marvelflix</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#filmes">Filmes</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container" id="filmes">
+        <div class="filme">
+            <a class="filme-item" href="https://www.youtube.com/watch?v=8ugaeA-nMTc" target="_blank" aria-label="Assistir Homem de Ferro (2008)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/8/85/Iron_Man_2008.jpg" alt="Homem de Ferro" loading="lazy">
+                <h2>Homem de Ferro (2008)</h2>
+            </a>
+
+            <a class="filme-item" href="https://www.youtube.com/watch?v=H1fL9L_67Ks" target="_blank" aria-label="Assistir O Incrível Hulk (2008)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/0/0c/The_Incredible_Hulk_poster.jpg" alt="O Incrível Hulk" loading="lazy">
+                <h2>O Incrível Hulk (2008)</h2>
+            </a>
+
+            <a class="filme-item" href="https://www.youtube.com/watch?v=JOhdZlQmQXk" target="_blank" aria-label="Assistir Thor (2011)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/9/95/Thor_Poster.jpg" alt="Thor" loading="lazy">
+                <h2>Thor (2011)</h2>
+            </a>
+
+            <a class="filme-item" href="https://www.youtube.com/watch?v=8Zr5p7D0hWk" target="_blank" aria-label="Assistir Capitão América: O Primeiro Vingador (2011)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/1/1b/Captain_America_The_First_Avenger_poster.jpg" alt="Capitão América: O Primeiro Vingador" loading="lazy">
+                <h2>Capitão América: O Primeiro Vingador (2011)</h2>
+            </a>
+
+            <a class="filme-item" href="https://www.youtube.com/watch?v=eOrNdBpGMeg" target="_blank" aria-label="Assistir Os Vingadores (2012)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/f/f9/Avengers_2012.jpg" alt="Os Vingadores" loading="lazy">
+                <h2>Os Vingadores (2012)</h2>
+            </a>
+
+            <a class="filme-item" href="https://www.youtube.com/watch?v=QxZ9Uh8X4C0" target="_blank" aria-label="Assistir Guardiões da Galáxia (2014)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/4/4e/Guardians_of_the_Galaxy_poster.jpg" alt="Guardiões da Galáxia" loading="lazy">
+                <h2>Guardiões da Galáxia (2014)</h2>
+            </a>
+
+            <a class="filme-item" href="https://www.youtube.com/watch?v=J0scoSScZjM" target="_blank" aria-label="Assistir Vingadores: Era de Ultron (2015)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/8/82/Avengers_Age_of_Ultron.jpg" alt="Vingadores: Era de Ultron" loading="lazy">
+                <h2>Vingadores: Era de Ultron (2015)</h2>
+            </a>
+
+            <a class="filme-item" href="https://www.youtube.com/watch?v=U9h1C2NQexY" target="_blank" aria-label="Assistir Homem-Aranha: De Volta ao Lar (2017)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/b/bd/Spider-Man_Homecoming_poster.jpg" alt="Homem-Aranha: De Volta ao Lar" loading="lazy">
+                <h2>Homem-Aranha: De Volta ao Lar (2017)</h2>
+            </a>
+
+            <a class="filme-item" href="https://www.youtube.com/watch?v=6V2f6C7K0gU" target="_blank" aria-label="Assistir Vingadores: Guerra Infinita (2018)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/7/74/Avengers_Infinity_War.jpg" alt="Vingadores: Guerra Infinita" loading="lazy">
+                <h2>Vingadores: Guerra Infinita (2018)</h2>
+            </a>
+
+            <a class="filme-item" href="https://www.youtube.com/watch?v=TcMBFSGVi1c" target="_blank" aria-label="Assistir Vingadores: Ultimato (2019)">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/9/90/Avengers_Endgame_2019.jpg" alt="Vingadores: Ultimato" loading="lazy">
+                <h2>Vingadores: Ultimato (2019)</h2>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Marvelflix. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
